@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "courseName" : "입문자를 위한 파이썬 정복",
+    "smallTitle": "12.실력확인 테스트",
+    "professor": "정재복 교수",
+    "진도율": 30,
+    "newQuiz": 4,
+    "attend": 3,
+    "codingTime": 95,
+    "imgUrl":  "/assets/img/thumbnail/1.png"
+  },
+  {
+    "id": 2,
+    "courseName" : "자바스크립트 입문",
+    "smallTitle": "2.동기와 비동기",
+    "professor": "박승규 교수",
+    "진도율": 60,
+    "newQuiz": 1,
+    "attend": 5,
+    "codingTime": 150,
+    "imgUrl":  "/assets/img/thumbnail/1.png"
+  },
+  {
+    "id": 3,
+    "courseName" : "리액트 프로그래밍",
+    "smallTitle": "16.하이오더 컴포넌트",
+    "professor": "이고잉 교수",
+    "진도율": 80,
+    "newQuiz": 4,
+    "attend": 3,
+    "codingTime": 95,
+    "imgUrl":  "/assets/img/thumbnail/1.png"
+  },
+  {
+    "id": 4,
+    "courseName" : "입문자를 위한 파이썬 정복",
+    "smallTitle": "12.실력확인 테스트",
+    "professor": "정재복 교수",
+    "진도율": 30,
+    "newQuiz": 4,
+    "attend": 3,
+    "codingTime": 95,
+    "imgUrl":  "/assets/img/thumbnail/1.png"
+  },
+  {
+    "id": 5,
+    "courseName" : "입문자를 위한 파이썬 정복",
+    "smallTitle": "12.실력확인 테스트",
+    "professor": "정재복 교수",
+    "진도율": 30,
+    "newQuiz": 4,
+    "attend": 3,
+    "codingTime": 95,
+    "imgUrl":  "/assets/img/thumbnail/1.png"
+  }
+]
