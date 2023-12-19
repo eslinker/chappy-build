@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "sender": "이은지 교수",
+    "messageTitle": "시험안내 드립니다.",
+    "receiveDate": "2023-09-13T14:59:59",
+    "messageUrl": "#",
+    "readState": false
+
+  },
+  {
+    "id": 2,
+    "sender": "함경재 교수",
+    "messageTitle": "과제제출 바랍니다.",
+    "receiveDate": "2023-09-13T14:59:59",
+    "messageUrl": "#",
+    "readState": false
+
+  },
+  {
+    "id": 3,
+    "sender": "김민재 교수",
+    "messageTitle": "자바시험 성적표 확인바랍니다.",
+    "receiveDate": "2023-09-13T14:59:59",
+    "messageUrl": "#",
+    "readState": false
+
+  },
+  {
+    "id": 4,
+    "sender": "현정희 교수",
+    "messageTitle": "과 사무실에서 제출물 수령바랍니다.",
+    "receiveDate": "2023-09-13T14:59:59",
+    "messageUrl": "#",
+    "readState": false
+
+  },
+  {
+    "id": 5,
+    "sender": "이은지 교수",
+    "messageTitle": "영화시사회 있으니 확인바랍니다.",
+    "receiveDate": "2023-09-13T14:59:59",
+    "messageUrl": "#",
+    "readState": false
+
+  },
+  {
+    "id": 6,
+    "sender": "홍유리 교수",
+    "messageTitle": "신입생 환영회 필참 바랍니다",
+    "receiveDate": "2023-09-13T14:59:59",
+    "messageUrl": "#",
+    "readState": false
+  }
+]

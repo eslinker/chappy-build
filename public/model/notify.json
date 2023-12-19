@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "enrollmentTitle": "파이썬의 기초",
+    "assignmentTitle": "오리엔테이션 : 자기소개",
+    "untilDate": "2023-09-13T14:59:59",
+    "readState": false
+  },
+  {
+    "id": 2,
+    "enrollmentTitle": "파이썬의 기초",
+    "assignmentTitle": "참고자료: 파이썬 개요",
+    "untilDate": "2023-09-13T14:59:59",
+    "readState": false
+
+  },
+  {
+    "id": 3,
+    "enrollmentTitle": "파이썬의 기초",
+    "assignmentTitle": "동영상 감상문",
+    "untilDate": "2023-09-13T14:59:59",
+    "readState": false
+
+  },
+  {
+    "id": 4,
+    "enrollmentTitle": "파이썬의 기초",
+    "assignmentTitle": "퀴즈 - 경영학의 개요",
+    "untilDate": "2023-09-13T14:59:59",
+    "readState": false
+
+  },
+  {
+    "id": 5,
+    "enrollmentTitle": "학습관리시스템 사용법 -1",
+    "assignmentTitle": "[1주차] 2차시 - 출석 ",
+    "untilDate": "2023-09-13T02:20:00",
+    "readState": false
+
+  },
+  {
+    "id": 6,
+    "enrollmentTitle": "학습관리시스템 사용법 -1",
+    "assignmentTitle": "[1주차]- 과제",
+    "untilDate": "2023-09-13T14:59:59",
+    "readState": false
+  }
+]
