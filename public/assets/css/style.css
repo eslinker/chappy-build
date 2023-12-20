@@ -1742,6 +1742,6 @@ h6 {
     font-weight: bold;
 }
 
-.search-box input[type='text'] {
-    font-size: 1.2rem;
+.search-block > input::placeholder {
+    padding-left: 5rem;
 }
