@@ -1745,3 +1745,59 @@ h6 {
 .search-block > input::placeholder {
     padding-left: 5rem;
 }
+
+
+/* lecture components */
+.lecturePreview-box{
+    .lecturePreview-image{
+        margin-left: 1.5rem;
+        margin-right: 0.75rem;
+    }
+
+    .lecturePreview-title{
+        padding-left: 0.75rem;
+        font-size: 0.875rem;
+        color:#333843;
+        font-weight: bold;
+    }
+}
+
+.lecturePreview-period{
+    font-size: 0.75rem;
+    color:#6b6b6b;
+
+}
+
+.lecturePreview-progress{
+   &>div{
+    font-size: 0.75rem;
+    font-weight: bold;
+    height:100%;
+    display: flex;
+    &:first-child {
+        align-items: end;
+    }
+    &:nth-child(2){
+        align-items: center;
+    }
+    & progress {
+        &::-webkit-progress-bar{
+            background:#DFE4EA;
+            border-radius: 5px;
+            height: 5px;
+            color:#3758F9;
+        }
+    }
+   }
+
+}
+
+.lectureNavigate-btn{
+    width: 120px;
+    padding: 9px 18px;
+    background:#3758F9;
+    color:#fff;
+    white-space: nowrap;
+}
+
+
