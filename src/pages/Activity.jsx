@@ -1,13 +1,14 @@
 import { useRecoilState } from 'recoil';
-import Home from '../../components/common/Home';
-import LectureList from '../../components/common/LectureList';
-import LectureListTitle from '../../components/common/LectureListTitle';
-import LecturePopup from '../../components/common/LecturePopup';
-import SearchBox from './searchBox';
-import { lectureState } from '../../recoil/atoms/lectureState';
+import Home from '../components/common/Home';
+import LectureList from '../components/common/LectureList';
+import LectureListTitle from '../components/common/LectureListTitle';
+import SearchBox from './lecture/searchBox';
+import LecturePopup from '../components/common/LecturePopup';
+import { lectureState } from '../recoil/atoms/lectureState';
 
-export default function Termination() {
+export default function Activity() {
   const [data, setData] = useRecoilState(lectureState);
+  console.log(data);
   return (
     <>
       <main id="main" className="main">

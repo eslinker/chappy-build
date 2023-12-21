@@ -1,8 +1,17 @@
+import { useRecoilState, useRecoilValue } from 'recoil';
+import { lectureState } from '../../recoil/atoms/lectureState';
+import { lecturePopupState } from '../../recoil/atoms/lecturePopupState';
+
 export default function LecturePopup() {
-  // TODO 수강신청취소 팝업창 확인누를시 취소되는 로직구현해야함
+  const [data, setData] = useRecoilState(lectureState);
+  const [lectureId] = useRecoilValue(lecturePopupState);
+
   const handleCencelBtn = () => {
+    const filterData = data.filter((el) => lectureId !== el.id);
+    setData(filterData);
     alert('취소 되었습니다.');
   };
+
   return (
     <>
       <div className="modal fade" id="lectureModal" tabindex="-1" aria-labelledby="수강취소 모달" aria-hidden="true">

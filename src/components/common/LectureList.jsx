@@ -1,8 +1,7 @@
-import React from 'react';
 import LectureBtn from './LectureBtn';
 import LectureDetailBtn from './lectureDetailBtn';
 
-export default function LectureList({ previewImg, title, period, percent, pending, link, type, pendingName }) {
+export default function LectureList({ id, previewImg, title, period, percent, pending, link, type, pendingName }) {
   return (
     <>
       <li className="row border-top mx-0" style={{ height: '76px' }}>
@@ -39,7 +38,7 @@ export default function LectureList({ previewImg, title, period, percent, pendin
         </div>
 
         <div className={`${pending ? 'col-4' : 'col-2'} d-flex justify-content-end align-items-center pr-3`}>
-          {type === 'registering' ? <LectureDetailBtn /> : <LectureBtn type={type} link={link} />}
+          {type === 'registering' ? <LectureDetailBtn id={id} /> : <LectureBtn id={id} type={type} link={link} />}
         </div>
       </li>
     </>
