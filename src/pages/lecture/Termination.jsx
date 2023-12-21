@@ -35,7 +35,7 @@ export default function Termination() {
         <SearchBox />
 
         <div className="lecture-container ">
-          <h3>과목 (진행중)</h3>
+          <h3>과목 (종료)</h3>
           <ul className="p-0">
             <LectureListTitle type={'termination'} />
             {data.map(({ previewImg, title, period, percent, link }) => {

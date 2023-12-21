@@ -1862,18 +1862,37 @@ th {
 }
 
 .lectureNavigate-btn {
+  display: flex;
+  align-items: center;
   padding: 0 15px;
   height: 37px;
   border-radius: 100px;
+  box-sizing: border-box;
+  & > img {
+    margin-right: 5px;
+  }
 }
 
 .lectureBtn {
   background: #3758f9;
   color: #fff;
   border: none;
-  & > img {
-    margin-right: 5px;
+  white-space: nowrap;
+}
+.lectureDetail {
+  color: #3758f9;
+  background: none;
+  border: 1px solid #3758f9;
+  &:first-child {
+    margin-right: 19px;
   }
+}
+
+.lectureCancel {
+  border: none;
+  color: #fff;
+  background: #ff6417;
+  color: #fff;
 }
 
 .lecture-topBtn {

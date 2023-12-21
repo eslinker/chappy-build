@@ -1,7 +1,8 @@
 import React from 'react';
 import LectureBtn from './LectureBtn';
+import LectureDetailBtn from './lectureDetailBtn';
 
-export default function LectureList({ previewImg, title, period, percent, pending, link, type }) {
+export default function LectureList({ previewImg, title, period, percent, pending, link, type, pendingName }) {
   return (
     <>
       <li className="row border-top mx-0" style={{ height: '76px' }}>
@@ -17,13 +18,13 @@ export default function LectureList({ previewImg, title, period, percent, pendin
         </div>
 
         <div
-          className={`lecturePreview-progress col-5 d-flex flex-column ${
+          className={`lecturePreview-progress  d-flex flex-column ${
             type === 'termination' || type === 'complete' ? 'invisible' : ''
-          }`}
+          } ${pending ? 'col-3' : 'col-5'}`}
         >
           {pending ? (
             <div className="lecturePending">
-              <p>수강 대기중</p>
+              <p>{pendingName === 'course' ? '수강 대기중' : '결제 대기중'}</p>
             </div>
           ) : (
             <>
@@ -37,8 +38,8 @@ export default function LectureList({ previewImg, title, period, percent, pendin
           )}
         </div>
 
-        <div className="col-2 d-flex justify-content-end align-items-center pr-3">
-          <LectureBtn type={type} link={link} />
+        <div className={`${pending ? 'col-4' : 'col-2'} d-flex justify-content-end align-items-center pr-3`}>
+          {type === 'registering' ? <LectureDetailBtn /> : <LectureBtn type={type} link={link} />}
         </div>
       </li>
     </>

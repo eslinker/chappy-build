@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
 
-export default function LectureBtn({ type }) {
+export default function LectureBtn({ type, link }) {
+  console.log(type);
   const [info, setInfo] = useState({
     style: '',
     content: '',
@@ -40,7 +41,6 @@ export default function LectureBtn({ type }) {
         },
       });
 
-    if (type === 'details') setInfo('');
     if (type === 'cancellation') setInfo('');
     if (type === 'writeReview') setInfo('');
     if (type === 'download') setInfo('');

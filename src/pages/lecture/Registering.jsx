@@ -17,6 +17,7 @@ const data = [
     period: ['23.01.25', '상시'],
     percent: 50,
     link: '#',
+    pendingName: 'course',
   },
   {
     previewImg: './assets/img/thumbnail/1.png',
@@ -25,6 +26,7 @@ const data = [
     percent: 20,
     link: '#',
     pending: true,
+    pendingName: 'payment',
   },
 ];
 
@@ -39,7 +41,7 @@ export default function Termination() {
           <h3>과목 (수강신청중)</h3>
           <ul className="p-0">
             <LectureListTitle type={'registering'} />
-            {data.map(({ previewImg, title, period, percent, link }) => {
+            {data.map(({ previewImg, title, period, percent, link, pendingName }) => {
               return (
                 <LectureList
                   key={title}
@@ -50,6 +52,7 @@ export default function Termination() {
                   link={link}
                   pending={true}
                   type={'registering'}
+                  pendingName={pendingName}
                 />
               );
             })}
