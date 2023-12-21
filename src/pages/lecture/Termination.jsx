@@ -1,8 +1,7 @@
-import React from 'react';
 import Home from '../../components/common/Home';
-import SearchBox from './searchBox';
 import LectureList from '../../components/common/LectureList';
 import LectureListTitle from '../../components/common/LectureListTitle';
+import SearchBox from './searchBox';
 
 const data = [
   {
@@ -28,17 +27,17 @@ const data = [
   },
 ];
 
-export default function Lecture() {
+export default function Termination() {
   return (
     <>
       <main id="main" className="main">
-        <Home title="진행 중" main="MY CLASS" />
+        <Home title="종료" main="MY CLASS" />
         <SearchBox />
 
         <div className="lecture-container ">
-          <h3>과목 (진행중)</h3>
+          <h3>과목 (종료)</h3>
           <ul className="p-0">
-            <LectureListTitle type={'lecture'} />
+            <LectureListTitle type={'termination'} />
             {data.map(({ previewImg, title, period, percent, link }) => {
               return (
                 <LectureList
@@ -48,7 +47,7 @@ export default function Lecture() {
                   period={period}
                   percent={percent}
                   link={link}
-                  type={'lecture'}
+                  type={'termination'}
                 />
               );
             })}

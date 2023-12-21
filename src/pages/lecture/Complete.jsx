@@ -28,7 +28,7 @@ const data = [
   },
 ];
 
-export default function Lecture() {
+export default function Complete() {
   return (
     <>
       <main id="main" className="main">
@@ -36,9 +36,9 @@ export default function Lecture() {
         <SearchBox />
 
         <div className="lecture-container ">
-          <h3>과목 (진행중)</h3>
+          <h3>과목 (이수)</h3>
           <ul className="p-0">
-            <LectureListTitle type={'lecture'} />
+            <LectureListTitle type={'complete'} />
             {data.map(({ previewImg, title, period, percent, link }) => {
               return (
                 <LectureList
@@ -48,7 +48,7 @@ export default function Lecture() {
                   period={period}
                   percent={percent}
                   link={link}
-                  type={'lecture'}
+                  type={'complete'}
                 />
               );
             })}
