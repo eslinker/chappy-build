@@ -13,6 +13,7 @@ export default function LectureList({
   pendingName,
   pendingIssuance,
 }) {
+  console.log(type);
   return (
     <>
       <li className="lectureItem row border-top mx-0" style={{ height: '76px' }}>

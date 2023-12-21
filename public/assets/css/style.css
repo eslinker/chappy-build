@@ -2091,7 +2091,7 @@ th {
 /*  */
 @media (max-width: 860px) {
   .lectureItem {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     &:first-child {
       min-width: 160px;
     }
@@ -2104,5 +2104,11 @@ th {
   }
   .lecturePreview-progress {
     flex-flow: row;
+  }
+}
+
+@media (max-width: 703px) {
+  .lectureItem {
+    background: red;
   }
 }
