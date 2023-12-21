@@ -9,7 +9,12 @@ export default function LectureDetailBtn() {
         <img src="/assets/img/btn/exclamation.svg" alt="" />
         과목 상세보기
       </button>
-      <button onClick={handleCancelBtn} className="lectureNavigate-btn lectureCancel">
+      <button
+        data-bs-toggle="modal"
+        data-bs-target="#lectureModal"
+        onClick={handleCancelBtn}
+        className="lectureNavigate-btn lectureCancel"
+      >
         <img src="/assets/img/btn/close.svg" alt="" />
         수강신청취소
       </button>

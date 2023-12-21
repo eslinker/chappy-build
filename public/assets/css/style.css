@@ -38,6 +38,10 @@ h6 {
   transition: all 0.3s;
 }
 
+#header {
+  z-index: 1055;
+}
+
 @media (max-width: 1199px) {
   #main {
     padding: 20px;
@@ -601,6 +605,9 @@ h6 {
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
+#sidebar {
+  z-index: 1055;
+}
 .sidebar {
   position: fixed;
   top: 90px;
@@ -1911,4 +1918,56 @@ th {
   background: rgba(255, 167, 11, 0.08);
   color: #ffa70b;
   border-radius: 100px;
+}
+
+.lecturePopup-warning {
+  border-radius: 2.667rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.667rem;
+  height: 2.667rem;
+  background: #feebeb;
+}
+
+.lecturePopup.modal-dialog {
+  margin-top: 30vh;
+}
+.lecturePopup.modal-content {
+  padding: 3.125rem 2.5rem 3.125rem;
+  text-align: center;
+}
+.lecturePopup.modal-header {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+}
+.lecturePopup .modal-body > p {
+  color: #637381;
+  line-height: 24px;
+  & .emphasis {
+    color: #e10e0e;
+  }
+}
+
+.lecturePopup .modal-footer {
+  border-top: none;
+  display: flex;
+  justify-content: center;
+  & > button {
+    box-sizing: border-box;
+    flex: 1 0 0;
+    border-radius: 6px;
+    height: 50px;
+    &:first-child {
+      background: none;
+      border: 1px solid #dfe4ea;
+      color: #000;
+    }
+    &:nth-child(2) {
+      background: #e10e0e;
+      color: #fff;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import Home from '../../components/common/Home';
 import LectureList from '../../components/common/LectureList';
 import LectureListTitle from '../../components/common/LectureListTitle';
+import LecturePopup from '../../components/common/LecturePopup';
 import SearchBox from './searchBox';
 
 const data = [
@@ -58,6 +59,7 @@ export default function Termination() {
             })}
           </ul>
         </div>
+        <LecturePopup />
       </main>
     </>
   );
