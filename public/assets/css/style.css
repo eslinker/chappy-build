@@ -2087,3 +2087,9 @@ th {
     }
   }
 }
+
+@media (max-width: 860px) {
+  .lecturePreview-box {
+    display: none;
+  }
+}
