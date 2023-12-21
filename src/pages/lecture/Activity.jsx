@@ -10,6 +10,7 @@ import { activityState } from '../../recoil/atoms/activityState';
 
 export default function Activity() {
   const [viewList, setViewList] = useState([]);
+  const [activeButton, setActiveBtn] = useState(0);
   const [visibleSideBar, setVisibleSideBar] = useRecoilState(activityState);
   const [lectureData] = useRecoilState(lectureState);
 
@@ -18,12 +19,15 @@ export default function Activity() {
 
   const handleAllViewData = () => {
     setViewList(lectureData);
+    setActiveBtn(0);
   };
   const handleFilterCompletedDate = () => {
     setViewList(lectureIssuanceCompleted);
+    setActiveBtn(1);
   };
   const handleFilterWaitingDate = () => {
     setViewList(lectureIssuanceWaiting);
+    setActiveBtn(2);
   };
 
   useEffect(() => {
@@ -39,10 +43,9 @@ export default function Activity() {
         <div className="activityListContainer">
           <div className="list-group activityListItem">
             <button
-              onclick={handleAllViewData}
+              onClick={handleAllViewData}
               type="button"
-              className="list-group-item list-group-item-action activity-active"
-              aria-current="true"
+              className={`list-group-item list-group-item-action ${activeButton === 0 && 'activity-active'}`}
             >
               <span>
                 전체 (<span>{lectureData.length}</span>)
@@ -51,13 +54,17 @@ export default function Activity() {
             <button
               onClick={handleFilterCompletedDate}
               type="button"
-              className="list-group-item list-group-item-action"
+              className={`list-group-item list-group-item-action ${activeButton === 1 && 'activity-active'}`}
             >
               <span>
                 발급완료(<span>{lectureIssuanceCompleted.length}</span>)
               </span>
             </button>
-            <button onClick={handleFilterWaitingDate} type="button" className="list-group-item list-group-item-action">
+            <button
+              onClick={handleFilterWaitingDate}
+              type="button"
+              className={`list-group-item list-group-item-action ${activeButton === 2 && 'activity-active'}`}
+            >
               <span>
                 발급대기(<span>{lectureIssuanceWaiting.length}</span>)
               </span>

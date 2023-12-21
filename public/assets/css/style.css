@@ -2088,8 +2088,21 @@ th {
   }
 }
 
+/*  */
 @media (max-width: 860px) {
-  .lecturePreview-box {
+  .lectureItem {
+    flex-wrap: nowrap;
+    &:first-child {
+      min-width: 160px;
+    }
+  }
+  .lecturePreview-image {
     display: none;
+  }
+  .lecturePreview-box {
+    min-width: 160px;
+  }
+  .lecturePreview-progress {
+    flex-flow: row;
   }
 }

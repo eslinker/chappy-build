@@ -15,8 +15,8 @@ export default function LectureList({
 }) {
   return (
     <>
-      <li className="row border-top mx-0" style={{ height: '76px' }}>
-        <div className="lecturePreview-box col-3 d-flex align-items-center" style={{ color: '#333843' }}>
+      <li className="lectureItem row border-top mx-0" style={{ height: '76px' }}>
+        <div className="lecturePreview-box col d-flex align-items-center" style={{ color: '#333843' }}>
           <img className="lecturePreview-image" width={46} height={39} src={previewImg} alt="미리보기 이미지" />
           <p className="lecturePreview-title m-0">{title}</p>
         </div>
