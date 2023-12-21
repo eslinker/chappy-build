@@ -6,7 +6,7 @@ export default function LecturePopup() {
   const [data, setData] = useRecoilState(lectureState);
   const [lectureId] = useRecoilValue(lecturePopupState);
 
-  const handleCencelBtn = () => {
+  const handleCancelBtn = () => {
     const filterData = data.filter((el) => lectureId !== el.id);
     setData(filterData);
     alert('취소 되었습니다.');
@@ -39,7 +39,7 @@ export default function LecturePopup() {
                 취소
               </button>
               <button
-                onClick={handleCencelBtn}
+                onClick={handleCancelBtn}
                 data-bs-toggle="modal"
                 data-bs-target="#lectureModal"
                 type="button"

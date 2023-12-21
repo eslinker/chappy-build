@@ -10,6 +10,8 @@ export const lectureState = atom({
       period: ['23.01.25', '상시'],
       percent: 90,
       link: '#',
+      pendingName: 'payment',
+      pendingIssuance: false,
     },
     {
       id: '1',
@@ -19,6 +21,7 @@ export const lectureState = atom({
       percent: 50,
       link: '#',
       pendingName: 'course',
+      pendingIssuance: true,
     },
     {
       id: '2',
@@ -29,6 +32,7 @@ export const lectureState = atom({
       link: '#',
       pending: true,
       pendingName: 'payment',
+      pendingIssuance: false,
     },
   ],
 });

@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 
 export default function LectureListTitle({ type }) {
   const [title, setTitle] = useState({
-    subject: '과목',
-    period: '기간',
-    progress: '학습 진행률',
+    subject: '',
+    period: '',
+    progress: '',
     other: '',
   });
 
@@ -39,6 +39,14 @@ export default function LectureListTitle({ type }) {
         period: '기간',
         progress: '접수상황',
         other: '',
+      });
+    }
+    if (type === 'activity') {
+      setTitle({
+        subject: '과목',
+        period: '기간',
+        progress: '상태',
+        other: '이수증',
       });
     }
   }, [type]);

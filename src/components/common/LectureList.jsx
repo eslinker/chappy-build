@@ -1,7 +1,18 @@
 import LectureBtn from './LectureBtn';
 import LectureDetailBtn from './lectureDetailBtn';
 
-export default function LectureList({ id, previewImg, title, period, percent, pending, link, type, pendingName }) {
+export default function LectureList({
+  id,
+  previewImg,
+  title,
+  period,
+  percent,
+  pending,
+  link,
+  type,
+  pendingName,
+  pendingIssuance,
+}) {
   return (
     <>
       <li className="row border-top mx-0" style={{ height: '76px' }}>
@@ -21,9 +32,17 @@ export default function LectureList({ id, previewImg, title, period, percent, pe
             type === 'termination' || type === 'complete' ? 'invisible' : ''
           } ${pending ? 'col-3' : 'col-5'}`}
         >
-          {pending ? (
+          {type === 'activity' ? (
             <div className="lecturePending">
-              <p>{pendingName === 'course' ? '수강 대기중' : '결제 대기중'}</p>
+              <p className={`${pendingIssuance ? 'issuance-completed' : 'pending-orange'}`}>
+                {!pendingIssuance ? '발급 대기중' : '발급 완료'}
+              </p>
+            </div>
+          ) : pending ? (
+            <div className="lecturePending">
+              <p className="pending-orange">
+                {pendingName === 'course' ? '수강 대기중' : pendingName === 'payment' ? '결제 대기중' : ''}
+              </p>
             </div>
           ) : (
             <>
@@ -38,7 +57,11 @@ export default function LectureList({ id, previewImg, title, period, percent, pe
         </div>
 
         <div className={`${pending ? 'col-4' : 'col-2'} d-flex justify-content-end align-items-center pr-3`}>
-          {type === 'registering' ? <LectureDetailBtn id={id} /> : <LectureBtn id={id} type={type} link={link} />}
+          {type === 'registering' ? (
+            <LectureDetailBtn id={id} />
+          ) : (
+            <LectureBtn id={id} title={title} pendingIssuance={pendingIssuance} type={type} link={link} />
+          )}
         </div>
       </li>
     </>

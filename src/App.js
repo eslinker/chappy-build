@@ -9,7 +9,7 @@ import Sidebar from './components/Sidebar';
 import Termination from './pages/lecture/Termination';
 import Complete from './pages/lecture/Complete';
 import Registering from './pages/lecture/Registering';
-import Activity from './pages/Activity';
+import Activity from './pages/lecture/Activity';
 
 import { RecoilRoot } from 'recoil';
 
